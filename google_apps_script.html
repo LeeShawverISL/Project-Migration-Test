@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborating with AI: Google Apps Script Lesson</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Collaborating with AI: Google Apps Script Lesson</h1>
+    <p>Learn how to create custom scripts in Google Workspace using Google Apps Script and AI.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Lesson Objectives</h2>
+      <ul>
+        <li>Understand the basics of Google Apps Script and its editor.</li>
+        <li>Collaborate with generative AI to create functional scripts.</li>
+        <li>Automate tasks in Google Workspace using Apps Script.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Step 1: Getting Started with Apps Script</h2>
+      <p><strong>Task:</strong> Follow these steps to create a custom script in Google Apps Script:</p>
+      <ol>
+        <li>Open a new Google Doc by typing <strong>docs.new</strong> into your browser’s address bar.</li>
+        <li>In the Google Doc, go to the top menu and click <strong>Extensions > Apps Script</strong>. This will open
+          the Apps Script editor.</li>
+        <li>In the editor, delete any placeholder code and paste the following script:</li>
+      </ol>
+      <pre><code>
+function onOpen() {
+  const ui = DocumentApp.getUi();
+  const menu = ui.createMenu('My New Menu');
+  menu.addItem('Show Alert', 'showCustomAlert');
+  menu.addToUi();
+}
+
+function showCustomAlert() {
+  const ui = DocumentApp.getUi();
+  ui.alert('This coding language can take your Docs and Sheets to the next level. How can you customize your life with Google Apps Script?');
+}
+      </code></pre>
+      <p>Explanation of the code:</p>
+      <ul>
+        <li><strong>onOpen:</strong> Automatically adds a custom menu called <strong>"Custom Tools"</strong> when the
+          document is opened.</li>
+        <li><strong>showCustomAlert:</strong> Displays an alert with a motivational message when the menu item is
+          clicked.</li>
+      </ul>
+      <p><strong>Task:</strong> Save the script, reload the Google Doc, and test the custom menu by clicking
+        <strong>Custom Tools > Show Alert</strong>.</p>
+    </section>
+
+    <section>
+      <h2>Step 2: Collaborating with AI</h2>
+      <p><strong>Task:</strong> Collaborate with AI to create a script.
+        <mark>THIS IS THE SKILL SET WE ARE FOCUSING ON IN THIS
+          UNIT</mark>. Good
+        questions get good answers. Prompting AI with garbage questions gets garbage results -- GIGO: Garbage in,
+        garbage, out.
+      </p>
+      <p>Example projects include:</p>
+      <ul>
+        <li>A script that sends an email via Gmail.</li>
+        <li>A custom menu in Google Sheets for quick tasks.</li>
+        <li>A macro in Google Docs that formats text automatically.</li>
+        <li>A script to generate a summary report from Google Sheets data.</li>
+        <li>A script to automate data cleaning in Google Sheets (e.g., remove duplicates, format dates).</li>
+        <li>A script to track changes in Google Docs or Sheets and log them into a separate sheet.</li>
+        <li>A custom notification system that sends reminders or alerts via email or Google Chat.</li>
+        <li>A to-do list app integrated with Google Sheets to manage tasks.</li>
+        <li>A script to fetch weather information into Google Sheets using an API like OpenWeatherMap.</li>
+        <li>A translation tool that converts text in Google Sheets into multiple languages using Google Translate.</li>
+        <li>An email campaign manager that sends personalized messages to a list of recipients.</li>
+        <li>A survey response visualizer that creates charts or graphs in Google Sheets automatically.</li>
+        <li>A meeting scheduler that suggests open slots in participants' Google Calendar schedules.</li>
+        <li>A content library that builds a searchable index of Google Drive documents by tags or keywords.</li>
+      </ul>
+      <p><mark>THIS IS THE SKILL SET WE ARE FOCUSING ON IN THIS
+          UNIT</mark>. Good
+        questions get good answers. Prompting AI with garbage questions gets garbage results -- GIGO: Garbage in,
+        garbage, out.</p>
+      <p>Example AI prompt:</p>
+      <blockquote>
+        Write a Google Apps Script that adds a custom menu in Google Sheets. The menu should include:
+        <ul>
+          <li>An option to clear all data from the sheet.</li>
+          <li>An option to populate the sheet with sample data.</li>
+        </ul>
+      </blockquote>
+      <p>Copy the AI-generated script into the Apps Script editor and test it.</p>
+    </section>
+
+    <section>
+      <h2>Step 3: Debugging and Running the Script</h2>
+      <p><strong>Task:</strong> Run your script and debug any issues. Use the following tips:</p>
+      <ul>
+        <li>Check the <strong>Execution Logs</strong> for errors.</li>
+        <li>Ask AI for help with debugging specific errors.</li>
+        <li>Authorize your script if prompted (e.g., for Gmail or Calendar integration).</li>
+      </ul>
+      <p>Enhance your project by asking follow-up questions to the AI, such as:</p>
+      <ul>
+        <li>"How do I add error handling to this script?"</li>
+        <li>"Can you make this script run automatically on a schedule?"</li>
+        <li>"How can I interact with multiple Google Workspace apps in one script?"</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Step 4: Showcase and Reflect</h2>
+      <p><strong>Task:</strong> Pair up with a partner to share and test each other's scripts. Provide feedback:</p>
+      <ul>
+        <li>What task does this script automate?</li>
+        <li>What features could make it more useful?</li>
+      </ul>
+      <p><strong>Reflection Questions:</strong></p>
+      <ul>
+        <li>What worked well when collaborating with AI?</li>
+        <li>What challenges did you face while debugging?</li>
+        <li>What other tasks could you automate with Apps Script?</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for IB MYP 4 Design | Google Apps Script Lesson</p>
+  </footer>
+</body>
+
+</html>
